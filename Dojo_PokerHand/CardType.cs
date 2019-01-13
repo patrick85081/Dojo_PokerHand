@@ -2,6 +2,7 @@
 {
     public enum CardType
     {
-        StraightFlush
+        StraightFlush,
+        FourOfAKind
     }
 }

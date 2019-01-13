@@ -22,6 +22,16 @@ namespace Dojo_PokerHand
             {
                 CardType = CardType.StraightFlush;
             }
+            else if (IsFourOfAKind(cards))
+            {
+                CardType = CardType.FourOfAKind;
+            }
+        }
+
+        private bool IsFourOfAKind(IEnumerable<Card> cards)
+        {
+            var isFourOfAKind = cards.GroupBy(c => c.Number).Any(g => g.Count() == 4);
+            return isFourOfAKind;
         }
 
         private bool IsStraight(IEnumerable<Card> cards)
