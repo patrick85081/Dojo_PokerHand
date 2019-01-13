@@ -7,6 +7,7 @@
         FullHouse,
         Flush,
         Straight,
-        ThreeOfAKind
+        ThreeOfAKind,
+        TwoPair
     }
 }

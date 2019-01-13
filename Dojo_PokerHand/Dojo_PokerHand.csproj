@@ -63,6 +63,7 @@
     <Compile Include="StraightMatcher.cs" />
     <Compile Include="SuitType.cs" />
     <Compile Include="ThreeOfAKindMatcher.cs" />
+    <Compile Include="TwoPairMatcher.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
