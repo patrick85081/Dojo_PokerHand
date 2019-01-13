@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Dojo_PokerHand
+namespace Dojo_PokerHand.PokerHand.CardMatchers
 {
     public class StraightFlushMatcher : ICardTypeMatcher
     {

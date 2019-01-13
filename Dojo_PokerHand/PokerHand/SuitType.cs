@@ -1,4 +1,4 @@
-﻿namespace Dojo_PokerHand
+﻿namespace Dojo_PokerHand.PokerHand
 {
     public enum SuitType
     {

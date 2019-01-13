@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace Dojo_PokerHand
+namespace Dojo_PokerHand.PokerHand.CardMatchers
 {
     public class FullHouseMatcher : ICardTypeMatcher
     {

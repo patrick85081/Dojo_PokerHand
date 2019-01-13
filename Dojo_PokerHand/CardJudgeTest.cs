@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Dojo_PokerHand.PokerHand;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Dojo_PokerHand
 {

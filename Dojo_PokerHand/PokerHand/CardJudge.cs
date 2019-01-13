@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using Dojo_PokerHand.PokerHand.CardMatchers;
 
-namespace Dojo_PokerHand
+namespace Dojo_PokerHand.PokerHand
 {
     public class CardJudge
     {

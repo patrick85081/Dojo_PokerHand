@@ -49,23 +49,23 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Card.cs" />
-    <Compile Include="CardJudge.cs" />
+    <Compile Include="PokerHand\Card.cs" />
+    <Compile Include="PokerHand\CardJudge.cs" />
     <Compile Include="CardJudgeTest.cs" />
-    <Compile Include="CardType.cs" />
+    <Compile Include="PokerHand\CardType.cs" />
     <Compile Include="CartTypeTests.cs" />
-    <Compile Include="FlushMatcher.cs" />
-    <Compile Include="FourOfAKindMatcher.cs" />
-    <Compile Include="FullHouseMatcher.cs" />
-    <Compile Include="HighCardMatcher.cs" />
-    <Compile Include="ICardTypeMatcher.cs" />
-    <Compile Include="OnePairMatcher.cs" />
+    <Compile Include="PokerHand\CardMatchers\FlushMatcher.cs" />
+    <Compile Include="PokerHand\CardMatchers\FourOfAKindMatcher.cs" />
+    <Compile Include="PokerHand\CardMatchers\FullHouseMatcher.cs" />
+    <Compile Include="PokerHand\CardMatchers\HighCardMatcher.cs" />
+    <Compile Include="PokerHand\CardMatchers\ICardTypeMatcher.cs" />
+    <Compile Include="PokerHand\CardMatchers\OnePairMatcher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StraightFlushMatcher.cs" />
-    <Compile Include="StraightMatcher.cs" />
-    <Compile Include="SuitType.cs" />
-    <Compile Include="ThreeOfAKindMatcher.cs" />
-    <Compile Include="TwoPairMatcher.cs" />
+    <Compile Include="PokerHand\CardMatchers\StraightFlushMatcher.cs" />
+    <Compile Include="PokerHand\CardMatchers\StraightMatcher.cs" />
+    <Compile Include="PokerHand\SuitType.cs" />
+    <Compile Include="PokerHand\CardMatchers\ThreeOfAKindMatcher.cs" />
+    <Compile Include="PokerHand\CardMatchers\TwoPairMatcher.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
