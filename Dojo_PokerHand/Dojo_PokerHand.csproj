@@ -55,6 +55,7 @@
     <Compile Include="CardType.cs" />
     <Compile Include="CartTypeTests.cs" />
     <Compile Include="FourOfAKindMatcher.cs" />
+    <Compile Include="FullHouseMatcher.cs" />
     <Compile Include="ICardTypeMatcher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StraightFlushMatcher.cs" />
