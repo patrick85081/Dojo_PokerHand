@@ -49,6 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CardTypeCompareTest.cs" />
     <Compile Include="PokerHand\Card.cs" />
     <Compile Include="PokerHand\CardJudge.cs" />
     <Compile Include="CardJudgeTest.cs" />

@@ -6,6 +6,8 @@ namespace Dojo_PokerHand
     [TestClass]
     public class CardJudgeTest
     {
+        private readonly CardTypeCompareTest cardTypeCompareTest = new CardTypeCompareTest();
+
         [TestMethod]
         public void StraightFlush()
         {
