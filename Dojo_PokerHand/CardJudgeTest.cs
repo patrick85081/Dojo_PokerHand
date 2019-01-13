@@ -15,6 +15,14 @@ namespace Dojo_PokerHand
             Assert.AreEqual(CardType.StraightFlush, cardJudge.CardType);
         }
 
+
+        [TestMethod]
+        public void StraightFlush_10_To_A()
+        {
+            var cardJudge = new CardJudge("H10,HJ,HQ,HK,HA");
+            Assert.AreEqual(CardType.StraightFlush, cardJudge.CardType);
+        }
+
         [TestMethod]
         public void FourOfAKind()
         {
