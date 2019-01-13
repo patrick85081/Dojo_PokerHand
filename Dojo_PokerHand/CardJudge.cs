@@ -14,6 +14,7 @@ namespace Dojo_PokerHand
             new FourOfAKindMatcher(),
             new FullHouseMatcher(),
             new FlushMatcher(),
+            new StraightMatcher(),
         };
 
         public CardType CardType { get; private set; }
