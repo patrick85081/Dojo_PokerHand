@@ -2,6 +2,7 @@
 {
     public enum SuitType
     {
-        Spade
+        Spade,
+        Heart
     }
 }

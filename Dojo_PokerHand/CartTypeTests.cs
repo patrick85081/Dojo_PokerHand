@@ -13,5 +13,13 @@ namespace Dojo_PokerHand
             Assert.AreEqual(SuitType.Spade, card.Suit);
             Assert.AreEqual(9, card.Number);
         }
+
+        [TestMethod]
+        public void Heart_10()
+        {
+            var card = new Card("H10");
+            Assert.AreEqual(SuitType.Heart, card.Suit);
+            Assert.AreEqual(10, card.Number);
+        }
     }
 }

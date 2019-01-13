@@ -8,6 +8,7 @@ namespace Dojo_PokerHand
         private Dictionary<char, SuitType> suitTypes = new Dictionary<char, SuitType>
         {
             {'S', SuitType.Spade},
+            {'H', SuitType.Heart},
         };
 
         private Dictionary<string, int> numberLookup = new Dictionary<string, int>()
