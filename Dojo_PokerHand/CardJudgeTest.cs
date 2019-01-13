@@ -39,5 +39,12 @@ namespace Dojo_PokerHand
             var cardJudge = new CardJudge("S6,H3,H2,H5,H4");
             Assert.AreEqual(CardType.Straight, cardJudge.CardType);
         }
+
+        [TestMethod]
+        public void ThreeOfAKind()
+        {
+            var cardJudge = new CardJudge("HQ,SQ,DQ,H5,D9");
+            Assert.AreEqual(CardType.ThreeOfAKind, cardJudge.CardType);
+        }
     }
 }
