@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dojo_PokerHannd", "Dojo_PokerHannd\Dojo_PokerHannd.csproj", "{4854741F-4E46-4569-8D87-1DACF96585D4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dojo_PokerHand", "Dojo_PokerHand\Dojo_PokerHand.csproj", "{4854741F-4E46-4569-8D87-1DACF96585D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
