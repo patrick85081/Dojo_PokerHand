@@ -17,6 +17,7 @@ namespace Dojo_PokerHand
             new StraightMatcher(),
             new ThreeOfAKindMatcher(),
             new TwoPairMatcher(),
+            new OnePairMatcher(),
         };
 
         public CardType CardType { get; private set; }

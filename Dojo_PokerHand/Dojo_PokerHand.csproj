@@ -58,6 +58,7 @@
     <Compile Include="FourOfAKindMatcher.cs" />
     <Compile Include="FullHouseMatcher.cs" />
     <Compile Include="ICardTypeMatcher.cs" />
+    <Compile Include="OnePairMatcher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StraightFlushMatcher.cs" />
     <Compile Include="StraightMatcher.cs" />

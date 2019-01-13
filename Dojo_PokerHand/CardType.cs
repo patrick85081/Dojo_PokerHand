@@ -8,6 +8,7 @@
         Flush,
         Straight,
         ThreeOfAKind,
-        TwoPair
+        TwoPair,
+        OnePair
     }
 }

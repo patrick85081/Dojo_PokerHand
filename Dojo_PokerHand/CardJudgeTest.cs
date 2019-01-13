@@ -53,5 +53,12 @@ namespace Dojo_PokerHand
             var cardJudge = new CardJudge("HA,DA,H9,D9,S4");
             Assert.AreEqual(CardType.TwoPair, cardJudge.CardType);
         }
+
+        [TestMethod]
+        public void OnePair()
+        {
+            var cardJudge = new CardJudge("HA,DA,H9,D7,S4");
+            Assert.AreEqual(CardType.OnePair, cardJudge.CardType);
+        }
     }
 }
