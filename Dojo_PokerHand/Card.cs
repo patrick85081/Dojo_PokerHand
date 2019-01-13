@@ -9,10 +9,14 @@ namespace Dojo_PokerHand
         {
             {'S', SuitType.Spade},
             {'H', SuitType.Heart},
+            {'D', SuitType.Diamond},
+            {'C', SuitType.Club},
         };
 
         private Dictionary<string, int> numberLookup = new Dictionary<string, int>()
         {
+            {"J", 11},
+            {"Q", 12},
         };
 
         public Card(string cardString)

@@ -3,6 +3,8 @@
     public enum SuitType
     {
         Spade,
-        Heart
+        Heart,
+        Diamond,
+        Club
     }
 }

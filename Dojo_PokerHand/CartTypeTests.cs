@@ -21,5 +21,21 @@ namespace Dojo_PokerHand
             Assert.AreEqual(SuitType.Heart, card.Suit);
             Assert.AreEqual(10, card.Number);
         }
+
+        [TestMethod]
+        public void Diamond_J()
+        {
+            var card = new Card("DJ");
+            Assert.AreEqual(SuitType.Diamond, card.Suit);
+            Assert.AreEqual(11, card.Number);
+        }
+
+        [TestMethod]
+        public void Club_Q()
+        {
+            var card = new Card("CQ");
+            Assert.AreEqual(SuitType.Club, card.Suit);
+            Assert.AreEqual(12, card.Number);
+        }
     }
 }
