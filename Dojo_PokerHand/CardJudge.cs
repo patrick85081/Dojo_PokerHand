@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 
 namespace Dojo_PokerHand
@@ -7,46 +8,37 @@ namespace Dojo_PokerHand
     {
         private IReadOnlyList<Card> cards;
 
+        private static readonly List<ICardTypeMatcher> TypeMatchers = new List<ICardTypeMatcher>()
+        {
+            new StraightFlushMatcher(),
+            new FourOfAKindMatcher(),
+        };
+
+        public CardType CardType { get; private set; }
+
         public CardJudge(string cardString)
         {
-            cards = cardString.Split(',')
+            cards = ParserCardString(cardString);
+            Judge(cards);
+        }
+
+        private static ReadOnlyCollection<Card> ParserCardString(string cardString)
+        {
+            return cardString.Split(',')
                 .Select(s => new Card(s))
                 .ToList()
                 .AsReadOnly();
-            Judge(cards);
         }
 
         private void Judge(IEnumerable<Card> cards)
         {
-            if (IsFlush(cards) && IsStraight(cards))
+            foreach (var typeMatcher in TypeMatchers)
             {
-                CardType = CardType.StraightFlush;
+                if (typeMatcher.IsMatch(cards))
+                {
+                    CardType = typeMatcher.CardType;
+                }
             }
-            else if (IsFourOfAKind(cards))
-            {
-                CardType = CardType.FourOfAKind;
-            }
         }
-
-        private bool IsFourOfAKind(IEnumerable<Card> cards)
-        {
-            var isFourOfAKind = cards.GroupBy(c => c.Number).Any(g => g.Count() == 4);
-            return isFourOfAKind;
-        }
-
-        private bool IsStraight(IEnumerable<Card> cards)
-        {
-            var isStraight = cards.GroupBy(c => c.Number).Count() == 5 &&
-                             cards.Max(c => c.Number) - cards.Min(c => c.Number) == 4;
-            return isStraight;
-        }
-
-        private bool IsFlush(IEnumerable<Card> cards)
-        {
-            var isFlush = cards.GroupBy(c => c.Suit).Count() == 1;
-            return isFlush;
-        }
-
-        public CardType CardType { get; private set; }
     }
 }
