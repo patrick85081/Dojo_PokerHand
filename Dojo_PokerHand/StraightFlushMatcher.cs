@@ -11,7 +11,7 @@ namespace Dojo_PokerHand
 
         public bool IsMatch(IEnumerable<Card> cards)
         {
-            return IsFlush(cards) && IsStraight(cards);
+            return new FlushMatcher().IsMatch(cards) && IsStraight(cards);
         }
 
         public CardType CardType => CardType.StraightFlush;
@@ -21,12 +21,6 @@ namespace Dojo_PokerHand
             var isStraight = cards.GroupBy(c => c.Number).Count() == 5 &&
                              cards.Max(c => c.Number) - cards.Min(c => c.Number) == 4;
             return isStraight;
-        }
-
-        private bool IsFlush(IEnumerable<Card> cards)
-        {
-            var isFlush = cards.GroupBy(c => c.Suit).Count() == 1;
-            return isFlush;
         }
     }
 }

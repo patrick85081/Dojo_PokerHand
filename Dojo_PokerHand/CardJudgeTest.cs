@@ -25,5 +25,12 @@ namespace Dojo_PokerHand
             var cardJudge = new CardJudge("HK,DK,SK,H5,S5");
             Assert.AreEqual(CardType.FullHouse, cardJudge.CardType);
         }
+
+        [TestMethod]
+        public void Flush()
+        {
+            var cardJudge = new CardJudge("HK,H3,H2,H5,H4");
+            Assert.AreEqual(CardType.Flush, cardJudge.CardType);
+        }
     }
 }

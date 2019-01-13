@@ -13,6 +13,7 @@ namespace Dojo_PokerHand
             new StraightFlushMatcher(),
             new FourOfAKindMatcher(),
             new FullHouseMatcher(),
+            new FlushMatcher(),
         };
 
         public CardType CardType { get; private set; }
@@ -38,6 +39,7 @@ namespace Dojo_PokerHand
                 if (typeMatcher.IsMatch(cards))
                 {
                     CardType = typeMatcher.CardType;
+                    break;
                 }
             }
         }

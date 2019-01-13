@@ -54,6 +54,7 @@
     <Compile Include="CardJudgeTest.cs" />
     <Compile Include="CardType.cs" />
     <Compile Include="CartTypeTests.cs" />
+    <Compile Include="FlushMatcher.cs" />
     <Compile Include="FourOfAKindMatcher.cs" />
     <Compile Include="FullHouseMatcher.cs" />
     <Compile Include="ICardTypeMatcher.cs" />
